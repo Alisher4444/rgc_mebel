@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186255363-1"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+        <script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [54.98, 82.89],
+                    zoom: 13
+                });
+
+                DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
+            });
+        </script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -483,7 +496,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="scheme-item wow fadeInLeft" data-wow-delay=0.4s>
                 <div class="scheme-item__number">1</div>
                 <div class="scheme-item__img">
-                    <img src="img/scheme/scheme-img.png" alt="Icon">
+                    <!-- <img src="img/scheme/scheme-img.png" alt="Icon"> -->
                 </div>
                 <span class="scheme-item__text">
                               Предварительный расчет по почте или телефону
@@ -495,7 +508,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="scheme-item wow fadeInLeft" data-wow-delay=0.6s>
                 <div class="scheme-item__number">2</div>
                 <div class="scheme-item__img">
-                    <img src="img/scheme/scheme-img.png" alt="Icon">
+                    <!-- <img src="img/scheme/scheme-img.png" alt="Icon"> -->
                 </div>
                 <span class="scheme-item__text">
                               Квалифицированный замер дизайнера
@@ -507,7 +520,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="scheme-item wow fadeInLeft" data-wow-delay=0.8s>
                 <div class="scheme-item__number">3</div>
                 <div class="scheme-item__img">
-                    <img src="img/scheme/scheme-img.png" alt="Icon">
+                    <!-- <img src="img/scheme/scheme-img.png" alt="Icon"> -->
                 </div>
                 <span class="scheme-item__text">
                               Заключение договора
@@ -519,7 +532,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="scheme-item wow fadeInLeft" data-wow-delay=1s>
                 <div class="scheme-item__number">4</div>
                 <div class="scheme-item__img">
-                    <img src="img/scheme/scheme-img.png" alt="Icon">
+                    <!-- <img src="img/scheme/scheme-img.png" alt="Icon"> -->
                 </div>
                 <span class="scheme-item__text">
                               Изготовление мебели от 7 дней
@@ -529,7 +542,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="scheme-item wow fadeInLeft" data-wow-delay=1.2s>
                 <div class="scheme-item__number">5</div>
                 <div class="scheme-item__img">
-                    <img src="img/scheme/scheme-img.png" alt="Icon">
+                    <!-- <img src="img/scheme/scheme-img.png" alt="Icon"> -->
                 </div>
                 <span class="scheme-item__text">
                               Бесплатная доставка и установка мебели
@@ -698,12 +711,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <footer class="footer">
         <div class="container">
             <h3 class="footer__title">Контактные данные</h3>
+            <div class="row">
             <!-- /.footer__title -->
+            <div class="col-md-6">
             <div class="footer-contacts">
                 <div class="footer__addr">
                     <span>Мебель RGC</span>
                     <span>Казахстан, г. Алматы,</span>
-                    <span>адрес ул.Ырысты 46/2, 86 кабинет</span>
+                    <span>адрес ул.Ырысты 46/2 </span>
 					<span></span>
 
                 </div>
@@ -715,7 +730,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 </div>
                 <!-- /.footer__number -->
             </div>
+
+            </div>
             <!-- /.footer-contacts -->
+            <div class="col-md-6">
+
+                <div id="map" style="width:500px; height:400px"></div>
+            </div>
+            </div>
         </div>
         <!-- /.container -->
 

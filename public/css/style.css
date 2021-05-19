@@ -86,7 +86,7 @@ a {
 
 .form__button {
     padding: 12px 25px;
-    background-color: #d8a354;
+    background-color: #DB4540;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -179,7 +179,7 @@ input:focus:-ms-input-placeholder {
 
 .feedback {
     padding: 100px 20px;
-    border: 2px solid #d8a354;
+    border: 2px solid #DB4540;
     background-color: #0a0a0a;
     margin: 0 auto;
     margin-top: 40px;
@@ -418,7 +418,7 @@ input:focus:-ms-input-placeholder {
     display: block;
     margin-top: 15px;
     height: 35px;
-    background: url("../img/services/line.png") center no-repeat;
+    /* background: url("../img/services/line.png") center no-repeat; */
     background-size: contain;
 }
 
@@ -454,7 +454,7 @@ input:focus:-ms-input-placeholder {
     font-family: 'Batang' sans-serif;
     font-style: normal;
     font-size: 28px;
-    color: #d8a354;
+    color: #DB4540;
 }
 
 .services-item:hover .services__text {
@@ -625,7 +625,7 @@ input:focus:-ms-input-placeholder {
     display: block;
     margin-top: 15px;
     height: 7px;
-    background: url("../img/scheme/line.png") center no-repeat;
+    /* background: url("../img/scheme/line.png") center no-repeat; */
 }
 
 .scheme-wrap {
@@ -663,7 +663,7 @@ input:focus:-ms-input-placeholder {
     padding: 0 20px;
     width: 40px;
     height: 2px;
-    background-color: #d8a354;
+    background-color: #DB4540;
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
@@ -714,7 +714,7 @@ input:focus:-ms-input-placeholder {
     display: block;
     margin-top: 15px;
     height: 7px;
-    background: url("../img/clients/line.png") center no-repeat;
+    /* background: url("../img/clients/line.png") center no-repeat; */
 }
 
 .clients-wrap {
@@ -838,7 +838,7 @@ input:focus:-ms-input-placeholder {
     font-size: 45px;
     font-family: 'Avenir-Next-Bold', sans-serif;
     font-weight: 700;
-    color: #d8a354;
+    color: #DB4540;
     cursor: pointer;
 }
 
